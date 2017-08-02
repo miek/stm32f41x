@@ -1,0 +1,15 @@
+[package]
+authors = ["Mike Walters <mike@flomp.net>"]
+name = "stm32f41x"
+version = "0.1.0"
+[dependencies]
+bare-metal = "0.1.0"
+cortex-m = "0.3.0"
+vcell = "0.1.0"
+
+[dependencies.cortex-m-rt]
+optional = true
+version = "0.3.0"
+
+[features]
+rt = ["cortex-m-rt"]

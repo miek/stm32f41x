@@ -1,0 +1,33 @@
+From acbb585035f87156ed5a33c6a9b2eab4a89f4079 Mon Sep 17 00:00:00 2001
+From: Mike Walters <mike@flomp.net>
+Date: Tue, 1 Aug 2017 23:35:56 +0100
+Subject: [PATCH] Add CPU info to STM32F41x
+
+---
+ data/STMicro/STM32F41x.svd | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+
+diff --git a/data/STMicro/STM32F41x.svd b/data/STMicro/STM32F41x.svd
+index a7e87cf..6affca7 100644
+--- a/data/STMicro/STM32F41x.svd
++++ b/data/STMicro/STM32F41x.svd
+@@ -3,6 +3,16 @@
+ xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
+   <name>STM32F41x</name>
++  <cpu>
++    <name>CM4</name>
++    <revision>r0p1</revision>
++    <endian>little</endian>
++    <fpuPresent>true</fpuPresent>
++    <mpuPresent>true</mpuPresent>
++    <vtorPresent>true</vtorPresent>
++    <nvicPrioBits>4</nvicPrioBits>
++    <vendorSystickConfig>false</vendorSystickConfig>
++  </cpu>
+   <version>1.5</version>
+   <description>STM32F41x</description>
+   <!--Bus Interface Properties-->
+-- 
+2.7.4
+
