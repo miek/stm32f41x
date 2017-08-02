@@ -1,7 +1,12 @@
 [package]
 authors = ["Mike Walters <mike@flomp.net>"]
+description = "Peripherel access API for STM32F41X microcontrollers"
+keywqords = ["no-std", "arm", "cortex-m", "stm32"]
+license = "MIT OR Apache-2.0"
 name = "stm32f41x"
+repository = "https://github.com/miek/stm32f41x"
 version = "0.1.0"
+
 [dependencies]
 bare-metal = "0.1.0"
 cortex-m = "0.3.0"
